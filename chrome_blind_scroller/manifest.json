@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Blind Scroller",
+  "version": "1.0.0",
+  "description": "Scrolls down until no more content loads.",
+  "permissions": ["scripting", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Blind Scroller",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
